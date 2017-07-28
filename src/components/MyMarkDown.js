@@ -11,7 +11,7 @@ class MyMarkDown extends Component {
     render() {
         return (
             <div>
-                {this.MyComponent(marked(this.props.value))}
+                <p>{this.MyComponent(marked(this.props.value))}</p>
             </div>
         )
     }

@@ -2,15 +2,12 @@ import React, { Component } from 'react'
 import marked from 'marked';
 
 class MyMarkDown extends Component {
-    constructor(props) {
-        super(props);
-    }
     MyComponent(rawHTML) {
         return <div dangerouslySetInnerHTML={createMarkup(rawHTML)} />;
     }
     render() {
         return (
-            <div>
+            <div className="convertedText">
                 <p>{this.MyComponent(marked(this.props.value))}</p>
             </div>
         )

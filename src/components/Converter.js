@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import MyMarkDown from './MyMarkDown'
 
-class MyForm extends Component {
+class Converter extends Component {
   constructor(props) {
     super(props);
-    this.state = { value: "" }
+    this.state = { value: "Please Enter Some Text\n=======" }
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
@@ -19,15 +19,15 @@ class MyForm extends Component {
   render() {
     return (
       <div>
-        <form onSubmit={this.handleSubmit}>
-          <input type="text" value={this.state.value} onChange={this.handleChange}  />
-        </form>
-        <MyMarkDown 
+        <div className="row">
+        <div className="col-xs-6"><textArea onSubmit={this.handleSubmit} value={this.state.value} onChange={this.handleChange}  className="inputText"/></div>
+        <div className="col-xs-6"><MyMarkDown 
         value={this.state.value}
-        />
+        /></div>
+        </div>
       </div>
     )
   }
 }
 
-export default MyForm; 
+export default Converter; 

@@ -15,6 +15,7 @@ body {
 }
 
 .convertedText{
+  font-family: 'Lora', serif;
   width:600px;
   height:300px;
   margin:50px;

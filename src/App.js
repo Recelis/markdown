@@ -6,7 +6,7 @@ import github from "./img/github.png";
 
 class App extends Component {
   openWindow(){
-    window.open("https://github.com/Recelis/CamperLeaderBoard",'_blank');
+    window.open("https://github.com/Recelis/markdown",'_blank');
   }
 
   render() {

@@ -4,7 +4,7 @@ import MyMarkDown from './MyMarkDown'
 class Converter extends Component {
   constructor(props) {
     super(props);
-    this.state = { value: "Please Enter Some Text\n=======" }
+    this.state = { value: "Please Enter Some Text\n======= \n```\nprintf('please enter some text');```" }
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }

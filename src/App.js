@@ -12,12 +12,13 @@ class App extends Component {
   render() {
     return (
       <div>
-        <h1 className="title">Markdown Previewer</h1>
-        <Converter
-        />
-        <p className="copyright">Created by Jacky Lui 2017
+        <p className="copyright"><span className = "title">Markdown Previewer</span> Created by Jacky Lui 2017
         <span><button onClick = {()=>this.openWindow()}className = "github"><img className = "github" src = {github}></img></button></span>
         </p>
+        <Converter
+        />
+        
+        
       </div>
     );
   }

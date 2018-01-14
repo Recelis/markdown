@@ -20,8 +20,8 @@ class Converter extends Component {
     return (
       <div>
         <div className="row">
-        <div className="col-xs-6"><textArea onSubmit={this.handleSubmit} value={this.state.value} onChange={this.handleChange}  className="inputText"/></div>
-        <div className="col-xs-6"><MyMarkDown 
+          <div className="col-xs-6"><textArea onSubmit={this.handleSubmit} value={this.state.value} onChange={this.handleChange}  className="inputText"/></div>
+          <div className="col-xs-6"><MyMarkDown 
         value={this.state.value}
         /></div>
         </div>
